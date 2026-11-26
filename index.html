@@ -1,0 +1,677 @@
+<!doctype html>
+<html lang="en" data-bs-theme="dark">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Senzo Nzuza | Web Developer</title>
+    <meta
+      name="description"
+      content="Portfolio of Senzo Nzuza, a web developer in Durban, South Africa. HTML, CSS, JavaScript, Bootstrap 5 and C# ASP.NET MVC. Available immediately."
+    />
+    <meta name="theme-color" content="#0d1520" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="style.css" rel="stylesheet" />
+
+    <script>
+      /* Set the saved theme before first paint so the page never flashes the wrong one. Dark is the default. */
+      (function () {
+        try {
+          var saved = localStorage.getItem("sn-theme");
+          document.documentElement.setAttribute(
+            "data-bs-theme",
+            saved === "light" ? "light" : "dark",
+          );
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+
+  <body
+    data-bs-spy="scroll"
+    data-bs-target="#mainNav"
+    data-bs-root-margin="0px 0px -55%"
+    data-bs-smooth-scroll="true"
+    tabindex="0"
+  >
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <!-- Navigation -->
+    <nav
+      id="mainNav"
+      class="navbar navbar-expand-md fixed-top sn-nav"
+      aria-label="Main"
+    >
+      <div class="container">
+        <a
+          class="navbar-brand sn-brand"
+          href="#home"
+          aria-label="Senzo Nzuza, back to top"
+        >
+          <span class="sn-mark" aria-hidden="true">SN</span>
+          <span class="d-none d-sm-inline">Senzo Nzuza</span>
+        </a>
+
+        <div class="d-flex align-items-center gap-2 order-md-last">
+          <button
+            id="themeToggle"
+            class="btn sn-icon-btn"
+            type="button"
+            aria-label="Switch to light theme"
+            title="Switch theme"
+          >
+            <svg
+              class="icon-sun"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <circle cx="12" cy="12" r="4" />
+              <path
+                d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"
+              />
+            </svg>
+            <svg
+              class="icon-moon"
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              aria-hidden="true"
+            >
+              <path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z" />
+            </svg>
+          </button>
+          <button
+            class="navbar-toggler sn-icon-btn"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navLinks"
+            aria-controls="navLinks"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+
+        <div class="collapse navbar-collapse" id="navLinks">
+          <ul class="navbar-nav ms-md-auto me-md-3 gap-md-1">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main id="main">
+      <!-- Hero -->
+      <header id="home" class="hero">
+        <div class="container">
+          <div class="row align-items-center g-5">
+            <div class="col-lg-7">
+              <p class="eyebrow">Web Developer &middot; Durban, South Africa</p>
+              <h1 class="hero-name">Senzo Ntuthuko Nzuza</h1>
+              <p class="hero-lead">
+                I am a web developer with nearly 5 years of experience building
+                responsive websites with HTML, CSS, JavaScript, Bootstrap 5 and
+                C# ASP.NET MVC. I have shipped customer-facing e-commerce and
+                subscription sites at Ignition Group, and moved two
+                education-sector websites off SharePoint at Conversation Lab.
+              </p>
+              <div class="d-flex flex-wrap gap-2 mb-4">
+                <a class="btn btn-accent" href="#contact">Get in touch</a>
+                <a class="btn btn-outline-accent" href="#projects"
+                  >View projects</a
+                >
+                <a
+                  class="btn btn-outline-accent"
+                  href="/Senzo/Senzo_Nzuza_CV.pdf"
+                  download="Senzo_Nzuza_CV.pdf"
+                  >Download CV (PDF)</a
+                >
+              </div>
+              <ul class="list-inline link-row mb-0">
+                <li class="list-inline-item">
+                  <a
+                    href="https://github.com/Mshazic"
+                    target="_blank"
+                    rel="noopener"
+                    >GitHub</a
+                  >
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://www.linkedin.com/in/senzo-nzuza-8670a2139"
+                    target="_blank"
+                    rel="noopener"
+                    >LinkedIn</a
+                  >
+                </li>
+                <li class="list-inline-item">
+                  <a
+                    href="https://nextwork.ai/portfolio/encouraged_navy_vibrant_iara/work"
+                    target="_blank"
+                    rel="noopener"
+                    >DevOps portfolio</a
+                  >
+                </li>
+              </ul>
+            </div>
+
+            <div class="col-lg-5">
+              <aside class="snapshot" aria-label="Snapshot">
+                <div class="snapshot-bar" aria-hidden="true">
+                  <span></span><span></span><span></span><em>senzo.profile</em>
+                </div>
+                <dl class="snapshot-body">
+                  <div>
+                    <dt>status</dt>
+                    <dd>
+                      <span class="pulse" aria-hidden="true"></span>available
+                      immediately
+                    </dd>
+                  </div>
+                  <div>
+                    <dt>location</dt>
+                    <dd>Durban, KwaZulu-Natal</dd>
+                  </div>
+                  <div>
+                    <dt>role</dt>
+                    <dd>web developer</dd>
+                  </div>
+                  <div>
+                    <dt>builds</dt>
+                    <dd>responsive sites, C# ASP.NET MVC</dd>
+                  </div>
+                  <div>
+                    <dt>learning</dt>
+                    <dd>Docker, Kubernetes, Terraform, AWS</dd>
+                  </div>
+                  <div>
+                    <dt>speaks</dt>
+                    <dd>English, IsiZulu, IsiXhosa</dd>
+                  </div>
+                </dl>
+              </aside>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <!-- About -->
+      <section id="about" class="section">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-4">
+              <p class="eyebrow">About</p>
+              <h2 class="section-title">
+                Web developer with a support background
+              </h2>
+            </div>
+            <div class="col-lg-8">
+              <p class="lead-text">
+                I work in Agile teams and manage code with Git. My first role at
+                Ignition Group was building and maintaining the Me&amp;You and
+                PEEQ websites. After that I spent time in first-line support at
+                Netsurit, which taught me how users and systems behave when
+                things break, and then returned to development at Conversation
+                Lab.
+              </p>
+              <p class="text-muted-sn mb-0">
+                Outside of work I am teaching myself DevOps and cloud tooling,
+                and I keep the hands-on labs in a public portfolio. I enjoy
+                music and travelling.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section section-alt">
+        <div class="container">
+          <p class="eyebrow">Skills</p>
+          <h2 class="section-title">What I work with</h2>
+
+          <div class="row g-3 g-lg-4 mt-1">
+            <div class="col-md-6">
+              <article class="sn-card h-100">
+                <h3 class="card-title-sn">Front-end</h3>
+                <ul class="chips">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript (vanilla)</li>
+                  <li>Bootstrap 5</li>
+                  <li>Responsive design</li>
+                </ul>
+              </article>
+            </div>
+            <div class="col-md-6">
+              <article class="sn-card h-100">
+                <h3 class="card-title-sn">Back-end</h3>
+                <ul class="chips">
+                  <li>C#</li>
+                  <li>ASP.NET MVC</li>
+                  <li>Blazor (exposure)</li>
+                </ul>
+              </article>
+            </div>
+            <div class="col-md-6">
+              <article class="sn-card h-100">
+                <h3 class="card-title-sn">Tools</h3>
+                <ul class="chips">
+                  <li>Git</li>
+                  <li>Visual Studio</li>
+                  <li>Visual Studio Code</li>
+                  <li>Google Analytics</li>
+                </ul>
+              </article>
+            </div>
+            <div class="col-md-6">
+              <article class="sn-card h-100">
+                <h3 class="card-title-sn">Practices</h3>
+                <ul class="chips">
+                  <li>Agile / Scrum</li>
+                  <li>Git source control</li>
+                  <li>SharePoint website migration</li>
+                </ul>
+              </article>
+            </div>
+            <div class="col-12">
+              <article class="sn-card sn-card-accent">
+                <div
+                  class="d-flex flex-wrap justify-content-between align-items-start gap-2 mb-2"
+                >
+                  <h3 class="card-title-sn mb-0">
+                    Self-taught: DevOps and cloud
+                  </h3>
+                  <a
+                    class="small card-link-sn"
+                    href="https://nextwork.ai/portfolio/encouraged_navy_vibrant_iara/work"
+                    target="_blank"
+                    rel="noopener"
+                    >See the labs &rarr;</a
+                  >
+                </div>
+                <ul class="chips">
+                  <li>Docker</li>
+                  <li>Linux</li>
+                  <li>CI/CD with GitHub Actions</li>
+                  <li>AWS (EC2, VPC, S3, IAM, ECS)</li>
+                  <li>Terraform</li>
+                  <li>Kubernetes</li>
+                </ul>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Experience -->
+      <section id="experience" class="section">
+        <div class="container">
+          <p class="eyebrow">Experience</p>
+          <h2 class="section-title">Where I have worked</h2>
+
+          <ol class="timeline">
+            <li class="timeline-item">
+              <div class="timeline-meta">Feb 2023 &ndash; Jul 2023</div>
+              <div class="timeline-body">
+                <h3>Front-End Developer</h3>
+                <p class="org">Conversation Lab (Pty) Ltd</p>
+                <ul>
+                  <li>
+                    Built dynamic, responsive websites using HTML, CSS and
+                    Bootstrap 5.
+                  </li>
+                  <li>
+                    Migrated the Varsity College and Vega School websites away
+                    from SharePoint.
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <div class="timeline-meta">Aug 2022 &ndash; Feb 2023</div>
+              <div class="timeline-body">
+                <h3>First Line Support (L1)</h3>
+                <p class="org">Netsurit</p>
+                <ul>
+                  <li>
+                    Provided first-line system and hardware support at the
+                    Ignition Group Durban site.
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="timeline-item">
+              <div class="timeline-meta">Nov 2018 &ndash; Jul 2022</div>
+              <div class="timeline-body">
+                <h3>Junior Software Developer</h3>
+                <p class="org">Ignition Group</p>
+                <ul>
+                  <li>
+                    Developed and maintained the Me&amp;You and PEEQ customer
+                    websites using C# ASP.NET MVC.
+                  </li>
+                  <li>
+                    Built Me&amp;You features for buying, RICA registration and
+                    activating SIM cards, and recharging airtime and data, with
+                    live chat and Google Analytics.
+                  </li>
+                  <li>
+                    Built PEEQ's digital magazine subscription flow for local
+                    and international customers, including sign-up, a seven-day
+                    free trial and cancellation at any time.
+                  </li>
+                  <li>
+                    Worked in an Agile team with a Scrum Master and managed code
+                    with Git.
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- Projects -->
+      <section id="projects" class="section section-alt">
+        <div class="container">
+          <p class="eyebrow">Projects</p>
+          <h2 class="section-title">Things I have built</h2>
+
+          <div class="row g-3 g-lg-4 mt-1">
+            <div class="col-md-6">
+              <article class="sn-card project h-100">
+                <p class="project-meta">
+                  Ignition Group &middot; 2020 &ndash; 2022
+                </p>
+                <h3>Me&amp;You website</h3>
+                <p>
+                  Customer site for a mobile services provider. Visitors buy and
+                  activate SIM cards, complete RICA, recharge airtime and data,
+                  and talk to support over live chat.
+                </p>
+                <ul class="chips chips-sm">
+                  <li>C#</li>
+                  <li>ASP.NET MVC</li>
+                  <li>Google Analytics</li>
+                  <li>Live chat</li>
+                </ul>
+              </article>
+            </div>
+            <div class="col-md-6">
+              <article class="sn-card project h-100">
+                <p class="project-meta">
+                  Ignition Group &middot; 2019 &ndash; 2020
+                </p>
+                <h3>PEEQ</h3>
+                <p>
+                  Digital magazine subscription site for US and local customers.
+                  Readers sign up, start a seven-day free trial with unlimited
+                  reading, and can cancel at any time.
+                </p>
+                <ul class="chips chips-sm">
+                  <li>C#</li>
+                  <li>ASP.NET MVC</li>
+                  <li>Google Analytics</li>
+                </ul>
+              </article>
+            </div>
+            <div class="col-md-6">
+              <article class="sn-card project h-100">
+                <p class="project-meta">Conversation Lab &middot; 2023</p>
+                <h3>Varsity College website</h3>
+                <p>
+                  Migration of the Varsity College website away from SharePoint
+                  to a responsive build.
+                </p>
+                <ul class="chips chips-sm">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Bootstrap 5</li>
+                </ul>
+              </article>
+            </div>
+            <div class="col-md-6">
+              <article class="sn-card project h-100">
+                <p class="project-meta">Conversation Lab &middot; 2023</p>
+                <h3>Vega School website</h3>
+                <p>
+                  Migration of the Vega School website away from SharePoint to a
+                  responsive build.
+                </p>
+                <ul class="chips chips-sm">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Bootstrap 5</li>
+                </ul>
+              </article>
+            </div>
+            <div class="col-12">
+              <article class="sn-card sn-card-accent project">
+                <p class="project-meta">Self-taught &middot; ongoing</p>
+                <h3>DevOps labs</h3>
+                <p>
+                  Hands-on project write-ups on Linux troubleshooting, Docker,
+                  Kubernetes, Terraform and AWS, published in a public
+                  portfolio.
+                </p>
+                <div class="d-flex flex-wrap align-items-center gap-3">
+                  <ul class="chips chips-sm mb-0">
+                    <li>Docker</li>
+                    <li>Kubernetes</li>
+                    <li>Terraform</li>
+                    <li>AWS</li>
+                    <li>Linux</li>
+                  </ul>
+                  <a
+                    class="card-link-sn"
+                    href="https://nextwork.ai/portfolio/encouraged_navy_vibrant_iara/work"
+                    target="_blank"
+                    rel="noopener"
+                    >Open the portfolio &rarr;</a
+                  >
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Education -->
+      <section id="education" class="section">
+        <div class="container">
+          <div class="row g-5">
+            <div class="col-lg-4">
+              <p class="eyebrow">Education</p>
+              <h2 class="section-title">Training and languages</h2>
+            </div>
+            <div class="col-lg-8">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <article class="sn-card h-100">
+                    <p class="project-meta">2017</p>
+                    <h3 class="card-title-sn">
+                      Diploma in Information Technology
+                    </h3>
+                    <p class="mb-0 text-muted-sn">
+                      PC Training and Business College
+                    </p>
+                  </article>
+                </div>
+                <div class="col-md-6">
+                  <article class="sn-card h-100">
+                    <p class="project-meta">2011</p>
+                    <h3 class="card-title-sn">
+                      Matric (National Senior Certificate)
+                    </h3>
+                    <p class="mb-0 text-muted-sn">Gcwalulwazi High School</p>
+                  </article>
+                </div>
+                <div class="col-12">
+                  <article class="sn-card">
+                    <h3 class="card-title-sn">Languages</h3>
+                    <ul class="chips mb-0">
+                      <li>English <span class="level">good</span></li>
+                      <li>IsiZulu <span class="level">good</span></li>
+                      <li>Northern Sotho <span class="level">fair</span></li>
+                      <li>IsiXhosa <span class="level">fair</span></li>
+                    </ul>
+                  </article>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section section-alt">
+        <div class="container">
+          <div class="row g-5 align-items-start">
+            <div class="col-lg-5">
+              <p class="eyebrow">Contact</p>
+              <h2 class="section-title">Let's talk about the role</h2>
+              <p class="text-muted-sn mb-0">
+                I am based in Durban and can start immediately. Email is the
+                quickest way to reach me.
+              </p>
+            </div>
+            <div class="col-lg-7">
+              <ul class="contact-list">
+                <li>
+                  <span class="contact-label">CV</span>
+                  <a
+                    class="contact-value"
+                    href="Senzo_Nzuza_CV.pdf"
+                    download="Senzo_Nzuza_CV.pdf"
+                    >Senzo_Nzuza_CV.pdf</a
+                  >
+                  <a
+                    class="btn btn-sm btn-copy"
+                    href="Senzo_Nzuza_CV.pdf"
+                    download="Senzo_Nzuza_CV.pdf"
+                    aria-label="Download CV as PDF"
+                    >Download</a
+                  >
+                </li>
+                <li>
+                  <span class="contact-label">Email</span>
+                  <a class="contact-value" href="mailto:senzokaqhaka@gmail.com"
+                    >senzokaqhaka@gmail.com</a
+                  >
+                  <button
+                    class="btn btn-sm btn-copy"
+                    type="button"
+                    data-copy="senzokaqhaka@gmail.com"
+                    aria-label="Copy email address"
+                  >
+                    Copy
+                  </button>
+                </li>
+                <li>
+                  <span class="contact-label">Phone</span>
+                  <a class="contact-value" href="tel:+27719878973"
+                    >+27 71 987 8973</a
+                  >
+                  <button
+                    class="btn btn-sm btn-copy"
+                    type="button"
+                    data-copy="+27 71 987 8973"
+                    aria-label="Copy phone number"
+                  >
+                    Copy
+                  </button>
+                </li>
+                <li>
+                  <span class="contact-label">GitHub</span>
+                  <a
+                    class="contact-value"
+                    href="https://github.com/Mshazic"
+                    target="_blank"
+                    rel="noopener"
+                    >github.com/Mshazic</a
+                  >
+                </li>
+                <li>
+                  <span class="contact-label">LinkedIn</span>
+                  <a
+                    class="contact-value"
+                    href="https://www.linkedin.com/in/senzo-nzuza-8670a2139"
+                    target="_blank"
+                    rel="noopener"
+                    >linkedin.com/in/senzo-nzuza-8670a2139</a
+                  >
+                </li>
+                <li>
+                  <span class="contact-label">DevOps</span>
+                  <a
+                    class="contact-value"
+                    href="https://nextwork.ai/portfolio/encouraged_navy_vibrant_iara/work"
+                    target="_blank"
+                    rel="noopener"
+                    >nextwork.ai portfolio</a
+                  >
+                </li>
+              </ul>
+              <p
+                class="visually-hidden"
+                id="copyStatus"
+                role="status"
+                aria-live="polite"
+              ></p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container d-flex flex-wrap justify-content-between gap-2">
+        <span>&copy; <span id="year">2026</span> Senzo Ntuthuko Nzuza</span>
+        <span>Built with HTML, CSS, Bootstrap and JavaScript</span>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
